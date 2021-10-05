@@ -10,4 +10,4 @@ function Util() {
   };
 }
 
-module.exports = Utils();
+module.exports = Util();

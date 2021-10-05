@@ -26,7 +26,9 @@ function Passengers() {
         ? Math.min(businessSeatsPF * flights - vip, regular)
         : 0;
     const regularPassengersWithEconomySeats = Math.min(
-      economySeatsPF * flights - regularPassengersWithBusinessSeats,
+      economySeatsPF * flights -
+        regularPassengersWithBusinessSeats -
+        vipPassengersWithEconomySeats,
       regular - regularPassengersWithBusinessSeats
     );
     return {
